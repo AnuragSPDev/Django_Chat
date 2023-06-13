@@ -1,0 +1,13 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Welcome | {% endblock title %}
+
+{% block content %}
+<div class="text-center py-3">
+    <h1>Welcome to InChat app</h1>
+    {% if not request.user.is_authenticated %}
+    <h3>Kickstart chatting by Logging In</h3>
+    <h5>If not registered yet, then please sign up first</h5>
+    {% endif %}
+</div>
+{% endblock content %}
