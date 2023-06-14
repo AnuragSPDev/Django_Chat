@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Rooms |{% endblock title %}
+
+{% block content %}
+<h1 class="text-center py-3">Available Rooms</h1>
+<div class="container">
+    <div class="row">
+        {% for room in all_rooms %}
+        <div class="card mx-2 my-2" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{room.name}}</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">{{room.slug_field}}</h6>
+                <a href="#" class="btn btn-outline-success">Join Room</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock content %}

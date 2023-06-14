@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 LOCAL_APPS = [
     'core',
+    'rooms',
 ]
 
 INSTALLED_APPS += LOCAL_APPS
